@@ -15,6 +15,13 @@
   font-family: "Inconsolata", monospace;
   box-sizing: border-box;
 }
+<script>
+function preventBack() { window.history.forward(); }
+setTimeout("preventBack()", 0);
+window.onunload = function () { null }
+        
+</script>
+        
 
 body {
   background-color: #050801;
